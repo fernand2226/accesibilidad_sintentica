@@ -97,8 +97,8 @@ val_data=Dataset.from_pandas(val_dataset[:max_val])
 
 TRAIN_BATCH_SIZE = 16   # input batch size for training (default: 64)
 VALID_BATCH_SIZE = 4    # input batch size for testing (default: 1000)
-TRAIN_EPOCHS = 3       # number of epochs to train (default: 10)
-VAL_EPOCHS = 1 
+TRAIN_EPOCHS = 1000       # number of epochs to train (default: 10)
+VAL_EPOCHS = 100 
 LEARNING_RATE = 1e-4    # learning rate (default: 0.01)
 SEED = 42               # random seed (default: 42)
 MAX_LEN = 128           # Max length for product description
