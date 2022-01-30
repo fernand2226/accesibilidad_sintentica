@@ -59,7 +59,7 @@ tokenizer.bos_token = tokenizer.cls_token
 tokenizer.eos_token = tokenizer.sep_token
 
 #Set the path to the data folder, datafile and output folder and files
-root_folder = '/mnt/c/Users/ferna/OneDrive/Escritorio/Proyecto/'
+root_folder = '/home/ubuntu/AccesibilidadSintetica/Prototipo02'
 data_folder = os.path.abspath(os.path.join(root_folder, 'datasets/text_react'))
 model_folder = os.path.abspath(os.path.join(root_folder, 'Projects/text_react/RoBERTa-FT-MLM'))
 output_folder = os.path.abspath(os.path.join(root_folder, 'Projects/text_react'))
