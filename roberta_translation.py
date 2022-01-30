@@ -67,7 +67,7 @@ pretrainedmodel_folder = os.path.abspath(os.path.join(root_folder, 'Projects/tex
 tokenizer_folder = os.path.abspath(os.path.join(root_folder, 'Projects/text_react/TokRoBERTa'))
 
 # Datafiles names containing training and test data
-datafile= '/mnt/c/Users/ferna/OneDrive/Escritorio/Proyecto/USPTO_Complexity_50k.csv'
+datafile= '/home/ubuntu/AccesibilidadSintetica/Prototipo02/prueba2/accesibilidad_sintentica/USPTO_Complexity_50k.csv'
 outputfile = 'prediction.csv'
 datafile_path = os.path.abspath(os.path.join(data_folder,datafile))
 outputfile_path = os.path.abspath(os.path.join(output_folder,outputfile))
