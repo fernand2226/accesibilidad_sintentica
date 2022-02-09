@@ -140,10 +140,13 @@ val_data.set_format(
 # Shuffle the dataset when it is needed
 #dataset = dataset.shuffle(seed=42, buffer_size=10, reshuffle_each_iteration=True)
 
+
+print("CRITICO 2********")
 # set encoder decoder tying to True
 roberta_shared = EncoderDecoderModel.from_encoder_decoder_pretrained("seyonec/BPE_SELFIES_PubChem_shard00_160k", "seyonec/BPE_SELFIES_PubChem_shard00_160k", force_download=True, tie_encoder_decoder=True)
 # Show the vocab size to check it has been loaded
 print('Vocab Size: ',roberta_shared.config.encoder.vocab_size)
+print("PASO CRITICO 2********")
 
 # set special tokens
 roberta_shared.config.decoder_start_token_id = tokenizer.bos_token_id                                             
