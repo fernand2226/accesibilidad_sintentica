@@ -53,7 +53,7 @@ import os
 # Loading the RoBERTa Tokenizer
 from transformers import AutoTokenizer, AutoModelForMaskedLM, RobertaTokenizerFast
 
-tokenizer = RobertaTokenizerFast.from_pretrained("seyonec/BPE_SELFIES_PubChem_shard00_160k")
+tokenizer = RobertaTokenizerFast.from_pretrained("BPE_SELFIES_PubChem_shard00_160k/")
 # Setting the BOS and EOS token
 tokenizer.bos_token = tokenizer.cls_token
 tokenizer.eos_token = tokenizer.sep_token
@@ -105,7 +105,7 @@ MAX_LEN = 128           # Max length for product description
 SUMMARY_LEN = 7         # Max length for product names
 
 # Loading the RoBERTa Tokenizer
-tokenizer = RobertaTokenizerFast.from_pretrained("seyonec/BPE_SELFIES_PubChem_shard00_160k",  max_len=MAX_LEN)
+tokenizer = RobertaTokenizerFast.from_pretrained("BPE_SELFIES_PubChem_shard00_160k/",  max_len=MAX_LEN)
 # Setting the BOS and EOS token
 tokenizer.bos_token = tokenizer.cls_token
 tokenizer.eos_token = tokenizer.sep_token
@@ -138,7 +138,7 @@ val_data.set_format(
 #dataset = dataset.shuffle(seed=42, buffer_size=10, reshuffle_each_iteration=True)
 
 # set encoder decoder tying to True
-roberta_shared = EncoderDecoderModel.from_encoder_decoder_pretrained("seyonec/BPE_SELFIES_PubChem_shard00_160k", "seyonec/BPE_SELFIES_PubChem_shard00_160k", tie_encoder_decoder=True)
+roberta_shared = EncoderDecoderModel.from_encoder_decoder_pretrained("BPE_SELFIES_PubChem_shard00_160k/", "BPE_SELFIES_PubChem_shard00_160k/", tie_encoder_decoder=True)
 # Show the vocab size to check it has been loaded
 print('Vocab Size: ',roberta_shared.config.encoder.vocab_size)
 
