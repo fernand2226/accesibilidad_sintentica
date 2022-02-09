@@ -104,11 +104,14 @@ SEED = 42               # random seed (default: 42)
 MAX_LEN = 128           # Max length for product description
 SUMMARY_LEN = 7         # Max length for product names
 
+
+print("CRITICO 1*********")
 # Loading the RoBERTa Tokenizer
 tokenizer = RobertaTokenizerFast.from_pretrained("seyonec/BPE_SELFIES_PubChem_shard00_160k", force_download=True,  max_len=MAX_LEN)
 # Setting the BOS and EOS token
 tokenizer.bos_token = tokenizer.cls_token
 tokenizer.eos_token = tokenizer.sep_token
+print("PASO CRITICO 1 ***********")
 
 batch_size=TRAIN_BATCH_SIZE  # change to 16 for full training
 encoder_max_length=MAX_LEN
