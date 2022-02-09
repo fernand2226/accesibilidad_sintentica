@@ -59,7 +59,7 @@ tokenizer.bos_token = tokenizer.cls_token
 tokenizer.eos_token = tokenizer.sep_token
 
 #Set the path to the data folder, datafile and output folder and files
-root_folder = '/home/ubuntu/AccesibilidadSintetica/Prototipo02'
+root_folder = '/home/ubuntu/accesibilidad_sintetica/roberta_translation/test1/accesibilidad_sintentica'
 data_folder = os.path.abspath(os.path.join(root_folder, 'datasets/text_react'))
 model_folder = os.path.abspath(os.path.join(root_folder, 'Projects/text_react/RoBERTa-FT-MLM'))
 output_folder = os.path.abspath(os.path.join(root_folder, 'Projects/text_react'))
@@ -67,7 +67,7 @@ pretrainedmodel_folder = os.path.abspath(os.path.join(root_folder, 'Projects/tex
 tokenizer_folder = os.path.abspath(os.path.join(root_folder, 'Projects/text_react/TokRoBERTa'))
 
 # Datafiles names containing training and test data
-datafile= '/home/ubuntu/AccesibilidadSintetica/Prototipo02/prueba2/accesibilidad_sintentica/USPTO_Complexity_50k.csv'
+datafile= '/home/ubuntu/accesibilidad_sintetica/roberta_translation/test1/accesibilidad_sintentica/USPTO_Complexity_50k.csv'
 outputfile = 'prediction.csv'
 datafile_path = os.path.abspath(os.path.join(data_folder,datafile))
 outputfile_path = os.path.abspath(os.path.join(output_folder,outputfile))
